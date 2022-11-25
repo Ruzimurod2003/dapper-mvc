@@ -1,0 +1,6 @@
+CREATE TABLE People (
+	Id INTEGER PRIMARY KEY,
+	FullName TEXT,
+	Age TEXT NOT NULL,
+	Email TEXT NOT NULL
+);
