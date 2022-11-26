@@ -14,6 +14,8 @@ public class HomeController : Controller
     }
     public IActionResult Index()
     {
+        ViewData["Count"] = _repository.Count;
+        ViewBag.FullTime = _repository.GetFullDateTime();
         return View(_repository.GetAll());
     }
 
